@@ -25,7 +25,7 @@ for index, row in df.iterrows():
 #df['Day'] = df['Date'].dt.day_name()
 
 #Remove dates from rows
-#df = df[df.type] != 'date'
+df = df[df.type] != 'date'
 
 
 st.dataframe(df)

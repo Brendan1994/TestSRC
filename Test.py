@@ -7,3 +7,9 @@ st.set_page_config(layout="wide")
 
 #Page title
 st.title("Latton TT Series") 
+
+#Create a df using an excel spreadsheet
+df = pd.read_excel("Results Archive 11-5-23.xlsx")
+df = df[['Position','Start Number','Name','Club','Split Time','Time']]
+
+st.dataframe(df)
